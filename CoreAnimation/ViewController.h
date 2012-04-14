@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnimationButton.h"
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet AnimationButton *button;
+
+- (IBAction)onButtonTapped:(id)sender;
 
 @end
