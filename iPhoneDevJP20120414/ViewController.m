@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  CoreAnimation
+//  iPhoneDevJP20120414
 //
 //  Created by 将司 小野 on 12/04/14.
 //  Copyright (c) 2012年 AppBankGames Inc. All rights reserved.

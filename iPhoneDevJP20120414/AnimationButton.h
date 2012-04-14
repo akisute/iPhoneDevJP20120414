@@ -1,6 +1,6 @@
 //
-//  AppDelegate.h
-//  CoreAnimation
+//  AnimationButton.h
+//  iPhoneDevJP20120414
 //
 //  Created by 将司 小野 on 12/04/14.
 //  Copyright (c) 2012年 AppBankGames Inc. All rights reserved.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AnimationButtonView : UIView
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet UIButton *button;
 
 @end
