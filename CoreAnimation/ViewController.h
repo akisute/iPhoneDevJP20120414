@@ -11,7 +11,7 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, retain) IBOutlet AnimationButton *button;
+@property (nonatomic, retain) IBOutlet AnimationButtonView *animationView;
 
 - (IBAction)onButtonTapped:(id)sender;
 

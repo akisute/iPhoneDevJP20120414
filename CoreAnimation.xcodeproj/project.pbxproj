@@ -17,6 +17,7 @@
 		0E0206A3153911BA008C6B8F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0206A1153911BA008C6B8F /* MainStoryboard_iPad.storyboard */; };
 		0E0206A6153911BA008C6B8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0206A5153911BA008C6B8F /* ViewController.m */; };
 		0E0206AE153911F9008C6B8F /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0206AD153911F9008C6B8F /* AnimationButton.m */; };
+		0E0206B61539154F008C6B8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0206B51539154F008C6B8F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0E0206A5153911BA008C6B8F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0E0206AC153911F9008C6B8F /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
 		0E0206AD153911F9008C6B8F /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
+		0E0206B51539154F008C6B8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 				0E02068D153911BA008C6B8F /* UIKit.framework in Frameworks */,
 				0E02068F153911BA008C6B8F /* Foundation.framework in Frameworks */,
 				0E020691153911BA008C6B8F /* CoreGraphics.framework in Frameworks */,
+				0E0206B61539154F008C6B8F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 				0E02068C153911BA008C6B8F /* UIKit.framework */,
 				0E02068E153911BA008C6B8F /* Foundation.framework */,
 				0E020690153911BA008C6B8F /* CoreGraphics.framework */,
+				0E0206B51539154F008C6B8F /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

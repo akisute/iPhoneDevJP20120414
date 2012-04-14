@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnimationButton : UIButton
+@interface AnimationButtonView : UIView
+
+@property (nonatomic, retain) IBOutlet UIButton *button;
 
 @end
