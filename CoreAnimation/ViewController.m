@@ -48,11 +48,12 @@
 
 - (IBAction)onButtonTapped:(id)sender
 {
+    // 移動先の点とか計算するよ
     CGFloat x = (CGFloat)(arc4random() % (NSInteger)CGRectGetWidth(self.view.bounds));
     CGFloat y = (CGFloat)(arc4random() % (NSInteger)CGRectGetHeight(self.view.bounds));
     CGPoint p = CGPointMake(x, y);
     
-    
+    // キーフレームアニメーションを作るよ
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     
     animation.values = [NSArray arrayWithObjects:
@@ -60,7 +61,6 @@
                         [NSValue valueWithCGPoint:self.view.center],
                         [NSValue valueWithCGPoint:p],
                         nil];
-    
     animation.keyTimes = [NSArray arrayWithObjects:
                           [NSNumber numberWithFloat:0.0f],
                           [NSNumber numberWithFloat:0.5f],
@@ -73,9 +73,15 @@
     animation.calculationMode = kCAAnimationLinear;
     animation.duration = 0.5;
     animation.delegate = self;
+    
+    // CAAnimation, CALayerなんかは任意の値をKVOでセットできる性質があるよ
+    // なんとかいう名前で呼ぶらしいんだけど忘れた＞＜
     [animation setValue:[NSValue valueWithCGPoint:p] forKey:@"MyCustomValueKey"];
     
+    // 作ったアニメーションをアクションとしてレイヤーに与えてやるよ
     self.animationView.layer.actions = [NSDictionary dictionaryWithObject:animation forKey:@"position"];
+    
+    // じゃあ早速目標地点に対して移動しつつアニメーションしてもらおうか！
     self.animationView.layer.position = p;
 }
 
@@ -85,6 +91,7 @@
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
 {
+    // さっきアニメーションにKVOで突っ込んだ値を取り出すよっと
     NSValue *value = [theAnimation valueForKey:@"MyCustomValueKey"];
     CGPoint p = [value CGPointValue];
     [self.animationView.button setTitle:NSStringFromCGPoint(p) forState:UIControlStateNormal];
