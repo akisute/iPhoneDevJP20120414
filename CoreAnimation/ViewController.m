@@ -9,13 +9,11 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 @synthesize animationView = _animationView;
+@synthesize apiClient = _apiClient;
 
 - (void)viewDidLoad
 {
@@ -24,12 +22,16 @@
     self.animationView.center = self.view.center;
     [self.animationView.button setTitle:@"Tap me" forState:UIControlStateNormal];
     [self.animationView.button addTarget:self action:@selector(onButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    //[self.animationView.button addTarget:self action:@selector(onButtonTappedForAPI:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.animationView];
+    
+    self.apiClient = [[[APIClient alloc] init] autorelease];
 }
 
 - (void)viewDidUnload
 {
     self.animationView = nil;
+    self.apiClient = nil;
     [super viewDidUnload];
 }
 
@@ -83,6 +85,19 @@
     
     // じゃあ早速目標地点に対して移動しつつアニメーションしてもらおうか！
     self.animationView.layer.position = p;
+}
+
+- (IBAction)onButtonTappedForAPI:(id)sender
+{
+    [self.apiClient api_google:nil callback:^(APIClientResponse *response) {
+        //NSLog(@"response = %@", response);
+        NSLog(@"response = %@ sender = %@", response, sender);
+    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        for (NSUInteger i=0; i<1000; i++) {
+            NSLog(@"abesi");
+        }
+    });
 }
 
 

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AnimationButton.h"
+#import "APIClient.h"
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet AnimationButtonView *animationView;
+@property (nonatomic, retain) APIClient *apiClient;
 
 - (IBAction)onButtonTapped:(id)sender;
 

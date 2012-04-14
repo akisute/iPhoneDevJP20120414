@@ -18,6 +18,8 @@
 		0E0206A6153911BA008C6B8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0206A5153911BA008C6B8F /* ViewController.m */; };
 		0E0206AE153911F9008C6B8F /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0206AD153911F9008C6B8F /* AnimationButton.m */; };
 		0E0206B61539154F008C6B8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0206B51539154F008C6B8F /* QuartzCore.framework */; };
+		0E5253C9153944C1006FA3DC /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5253C8153944C1006FA3DC /* APIClient.m */; };
+		0E5253CD153944CC006FA3DC /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E5253CC153944CC006FA3DC /* APIRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		0E0206AC153911F9008C6B8F /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
 		0E0206AD153911F9008C6B8F /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		0E0206B51539154F008C6B8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0E5253C7153944C1006FA3DC /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		0E5253C8153944C1006FA3DC /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		0E5253CB153944CC006FA3DC /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		0E5253CC153944CC006FA3DC /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,10 @@
 				0E0206A5153911BA008C6B8F /* ViewController.m */,
 				0E0206AC153911F9008C6B8F /* AnimationButton.h */,
 				0E0206AD153911F9008C6B8F /* AnimationButton.m */,
+				0E5253C7153944C1006FA3DC /* APIClient.h */,
+				0E5253C8153944C1006FA3DC /* APIClient.m */,
+				0E5253CB153944CC006FA3DC /* APIRequest.h */,
+				0E5253CC153944CC006FA3DC /* APIRequest.m */,
 				0E020693153911BA008C6B8F /* Supporting Files */,
 			);
 			path = CoreAnimation;
@@ -178,6 +188,8 @@
 				0E02069D153911BA008C6B8F /* AppDelegate.m in Sources */,
 				0E0206A6153911BA008C6B8F /* ViewController.m in Sources */,
 				0E0206AE153911F9008C6B8F /* AnimationButton.m in Sources */,
+				0E5253C9153944C1006FA3DC /* APIClient.m in Sources */,
+				0E5253CD153944CC006FA3DC /* APIRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +309,7 @@
 				0E0206AB153911BA008C6B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

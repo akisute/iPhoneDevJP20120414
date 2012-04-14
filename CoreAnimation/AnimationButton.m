@@ -35,7 +35,6 @@
 
 - (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)key
 {
-    NSLog(@"animation");
     // https://developer.apple.com/library/ios/#documentation/GraphicsImaging/Reference/CALayer_class/Introduction/Introduction.html # actionForKey: を参照
     // http://forums.pragprog.com/forums/57/topics/1392
     // 要するにUIViewがactionForLayer:forKey:デリゲートを実装しちゃってるのでself.layer.actionsが全く役に立っていない
